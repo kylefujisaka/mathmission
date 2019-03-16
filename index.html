@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Mission!</title>
+</head>
+
+<body background="https://i.imgur.com/lwC9Q.jpg" style="background-size:100%; background-attachment:fixed;">
+    <style>
+        #title {
+            text-align: center;
+            font-family: stencil;
+            font-style: oblique;
+            font-size: 60px;
+        }
+
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #welcome {
+            border: ridge;
+            background-color: white;
+            border-color: rgb(250, 250, 250);
+            border-width: 6px;
+            text-align: center;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .leader{
+            font-size:40px;
+            font-family:impact;
+        }
+
+        .drawing {
+            height: 375px;
+        }
+
+        .elite4 {
+            text-align: center;
+            border: ridge;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-color: rgb(250, 250, 250);
+            border-width: 6px;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 50px;
+            font-family: trebuchet ms;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        #refresh {
+            color: rgb(10, 10, 195);
+            text-decoration: none;
+        }
+    </style>
+
+    <h1 id="title"> Math Mission (ELITE FOUR EDITION) </h1>
+
+    <img id="starter" src="https://gamewith-en.akamaized.net/img/45603956c3bdf879da5162dcc6f43f0b.jpg" class="center" height="300px"></img>
+
+    <h2 id="welcome"> Welcome Fellow Trainer! Today is the day you face the Elite Four and become the new champion of the Kanto region! You and your team of Pokemon must work together to defeat the Elite Four, solving math problems along the way to become the very best
+        like no one ever was!</h2>
+
+
+    <div id="lorelei" class="elite4">
+
+        <h1 class="leader" style="color:rgb(120,140,255)">Lorelei</h1>
+        <img id="lore" class="drawing" src="https://cdn.discordapp.com/attachments/471387038415978516/556394084147920907/unknown.png"></img>
+        <p class="question">
+            Lorelei and her Lapras want to create an ice sculpture of the legendary pokemon Mewtwo. To make sure the sculpture doesn't melt, the room must be at 10 degrees farenheight. Right now the room is 70 degrees farenheight. How many times colder does Lorelei
+            need to make the room in order to make her sculpture?
+        </p>
+        <br>
+        <p>
+            <select id="divide" style="font-family:trebuchet ms;">
+                <option></option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                
+                
+                </select> times colder.
+        </p>
+        <br>
+        <div id="divideoops"></div>
+        <br>
+        <a class="hint" href="https://preview.c9users.io/basiil/hackathon/ideas/Loreleidivide.html?_c9_id=livepreview1&_c9_host=https://ide.c9.io" target="_blank" style="color:rgb(100,100,255);">Need a hint? Click here!</a>
+
+    </div>
+
+    <div id="bruno" class="elite4">
+
+        <h1 class="leader" style="color:rgb(150,40,40)">Bruno</h1>
+        <img id="brun" class="drawing" src="https://cdn.discordapp.com/attachments/471387038415978516/556405055474106368/hack2.jpeg"></img>
+        <p class="question">
+            Bruno and Hitmonchan are training by lifting <span id="addnum1"></span> pound weights. Not feeling pushed enough, Bruno adds <span id="addnum2"></span> pounds more. How many pounds is he lifting now?
+        </p>
+        <br>
+        <p>
+            <input id="add" style="font-family:trebuchet ms;">lb
+        </p>
+        <br>
+        <div id="addoops"></div>
+        <br>
+        <a class="hint" href="https://preview.c9users.io/basiil/hackathon/ideas/BrunoAddition.html?_c9_id=livepreview2&_c9_host=https://ide.c9.io" target="_blank" style="color:rgb(150,40,40);">Need a hint? Click Here!</a>
+    </div>
+
+
+    <div id="agatha" class="elite4">
+        <h1 class="leader" style="color:rgb(100,20,155)">Agatha</h1>
+        <img id="agath" class="drawing" src="https://cdn.discordapp.com/attachments/471387038415978516/556419635130400769/hack3.jpeg"></img>
+        <p class="question">
+            Agatha is taking care of <span id="subnum1"></span> Gastlys in Lavender Tower. One day, <span id="subnum2"></span> of them have vanished. How many Gastlys remain?
+        </p>
+        <br>
+        <p>
+            <input id="subtract" style="font-family:trebuchet ms;"> Gastlys.
+        </p>
+        <br>
+        <div id="subtractoops"></div>
+        <br>
+        <a class="hint" href="https://preview.c9users.io/basiil/hackathon/ideas/AgathaSubtraction.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io" target="_blank">Need a hint? Click Here!</a>
+    </div>
+
+    <div id="lance" class="elite4">
+        <h1 class="leader" style="color:rgb(200,120,40)">Lance</h1>
+        <img id="lanc" class="drawing" src="https://cdn.discordapp.com/attachments/471387038415978516/556449345918992384/hack4.jpeg" height="300px"></img>
+        <p class="question">
+            Lance leaves his three Dragonite in the Pokemon daycare. Each of them lay 2 eggs. How many Dratini eggs does Lance have in total?
+        </p>
+
+        <br>
+        <p>
+            <select id="multiply" style="font-family:trebuchet ms;">
+                <option></option>
+                <option>5</option>
+                <option>6</option>
+                <option>9</option>
+                <option>12</option>
+            </select>
+            <br>
+            <div id="multiplyoops"></div>
+            <a class="hint" href="https://preview.c9users.io/basiil/hackathon/ideas/LanceMultiplication.html?_c9_id=livepreview4&_c9_host=https://ide.c9.io" target="_blank" style="color:rgb(225,120,40);">Need a Hint? Click Here!</a>
+        </p>
+    </div>
+
+
+    <div id="blue" class="elite4">
+        <h1 class="leader" style="color:rgb(0,0,155)">Blue</h1>
+        <img id="blu" class="drawing" src="https://cdn.discordapp.com/attachments/471387038415978516/556529867118608385/hack5.jpeg" height="300px"></img>
+        <p class="question">
+            Blue has <span id="num1"></span> Electric type Pokemon and <span id="num2"></span> Flying type Pokemon. How many Pokemon does he have in total.
+        </p>
+        <br>
+        <p>
+            <input id="gary" style="font-family:trebuchet ms;">
+        </p>
+
+        <br>
+        <div id="garyoops"></div>
+
+    </div>
+
+
+    <div class="elite4">You have reached the end of your journey. <a id="refresh" href="https://preview.c9users.io/basiil/hackathon/ideas/ideas.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io">Refresh the page</a> to start a new adventure.</div>
+
+
+    <script src="ideas.js"></script>
+</body>
+<link rel=stylesheet href = "style.css" type="text/css">
+
+</html>
